@@ -4,10 +4,7 @@ import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-export function MainNav({
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLElement>) {
+export function MainNav({ className }: React.HTMLAttributes<HTMLElement>) {
   const pathname = usePathname()
 
   const routes = [
@@ -34,7 +31,12 @@ export function MainNav({
   ]
 
   return (
-    <nav className={cn("flex items-center space-x-4 lg:space-x-6", className)}>
+    <nav
+      className={cn(
+        "hidden md:flex items-center space-x-4 lg:space-x-6",
+        className
+      )}
+    >
       {routes.map((route) => (
         <Link
           key={route.href}

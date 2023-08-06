@@ -1,10 +1,12 @@
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
+import MobileNav from "./mobile-nav"
 
 const Navbar = () => {
   return (
     <div className="border-b">
       <div className="flex h-16 items-center px-4">
+        <MobileNav />
         <div>
           <h1 className="text-sm font-semibold">Complete Consulting</h1>
         </div>
