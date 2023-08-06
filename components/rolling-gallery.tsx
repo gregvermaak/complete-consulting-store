@@ -30,11 +30,11 @@ const RollingGallery: FC<RollingGalleryProps> = ({ images }) => {
   }, [currentIndex, images.length])
 
   return (
-    <div className="h-[calc(100vh-81px)]">
+    <div className="h-[calc(100vh-130px)]">
       <MotionConfig transition={{ duration: 1.0 }}>
         <AnimatePresence initial={false}>
           <motion.img
-            className="w-screen h-[calc(100vh-80px)] absolute top-0 left-0 object-cover"
+            className="w-screen h-[calc(100vh-130px)] absolute top-0 left-0 object-cover"
             key={images[currentIndex].url}
             src={images[currentIndex].url}
             variants={variants}

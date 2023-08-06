@@ -7,7 +7,7 @@ const GalleryPage = async () => {
   const locations = await getLocations()
 
   return (
-    <div className="container mx-auto min-h-screen mt-12 max-w-7xl">
+    <div className="container mx-auto min-h-[calc(100vh-130px)] pt-24 max-w-7xl">
       <GalleryList title="Gallery" items={locations} />
     </div>
   )

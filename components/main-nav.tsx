@@ -21,6 +21,16 @@ export function MainNav({
       label: "Gallery",
       active: pathname === "/gallery",
     },
+    {
+      href: "/about",
+      label: "About",
+      active: pathname === "/about",
+    },
+    {
+      href: "/contact",
+      label: "Contact",
+      active: pathname === "/contact",
+    },
   ]
 
   return (
