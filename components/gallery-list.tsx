@@ -24,8 +24,8 @@ const GalleryList: FC<GalleryListProps> = ({ title, items }) => {
               className="rounded-md aspect-square md:aspect-[8/5] object-cover"
               src={item.images[0].url}
               alt={item.streetName}
-              width={1280}
-              height={720}
+              width={720}
+              height={480}
               priority={true}
             />
             <span className="text-xs pb-2 md:text-base md:pb-0">

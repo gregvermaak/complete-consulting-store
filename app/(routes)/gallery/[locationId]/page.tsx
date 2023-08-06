@@ -1,6 +1,6 @@
 import { FC } from "react"
 import getLocation from "@/actions/get-location"
-import LocationGalleryList from "@/components/location-gallery-list"
+import ImageGallery from "@/components/image-gallery"
 
 interface LocationPageProps {
   params: {
@@ -13,10 +13,7 @@ const LocationPage: FC<LocationPageProps> = async ({ params }) => {
 
   return (
     <div className="container mx-auto min-h-screen mt-12 max-w-7xl">
-      <LocationGalleryList
-        title={location.streetName}
-        items={location.images}
-      />
+      <ImageGallery title={location.streetName} images={location.images} />
     </div>
   )
 }
